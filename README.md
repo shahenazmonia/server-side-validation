@@ -30,7 +30,7 @@ const result = Joi.validate({ username: 'abc', password: 'sh1121993$$MO'}, schem
 ### Exercise
 _Note: All variables are required_
 
-- ```signup``` function has variables:
+- ```/signup``` endpoint has variables:
   * username -> should be string
   * email -> should be an email  
   * password -> should has at least 6 letters and contains [aA0-9]
