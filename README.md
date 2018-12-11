@@ -2,7 +2,7 @@
 ## Server Side Validation Workshop
 
 
-[!server validation ]('https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/16441230-f61c-4a68-bd06-9ea32076c12d/validation.png')
+![server validation](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/16441230-f61c-4a68-bd06-9ea32076c12d/validation.png)
 
 ##### What is sever side validation
 
@@ -30,7 +30,7 @@ const result = Joi.validate({ username: 'abc', password: 'sh1121993$$MO'}, schem
 ### Exercise
 _Note: All variables are required_
 
-- ```/signup``` endpoint has variables:
+- ```/signup``` function has variables:
   * username -> should be string
   * email -> should be an email  
   * password -> should has at least 6 letters and contains [aA0-9]
