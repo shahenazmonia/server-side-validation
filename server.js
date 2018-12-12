@@ -17,9 +17,9 @@ app.post('/signup',validate(signupValidation), (req,res)=>{
    res.json({succes: "signup validation is confirmed"})
 });
 
-app.get('/loginPage', (req,res)=>{
-  res.sendFile(path.join(__dirname, '..', 'public', 'login.html'));
-});
+// app.get('/loginPage', (req,res)=>{
+//   res.sendFile(path.join(__dirname, '..', 'public', 'login.html'));
+// });
 
 app.post('/login', validate(loginValidation), (req,res)=>{
   res.json({succes: "login validation is confirmed"})
