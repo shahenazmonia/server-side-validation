@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.get('/', (req,res)=>{
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
@@ -26,5 +26,5 @@ app.post('/login', validate(loginValidation), (req,res)=>{
 })
 
 app.listen(3000, () => {
-console.log(`Our app is running on http://localhost:3000`);
+  console.log(`Our app is running on http://localhost:3000`);
 });

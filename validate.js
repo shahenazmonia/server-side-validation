@@ -6,7 +6,7 @@ const validate = (validateCheck) => (req, res, next) => {
 
     return accum;
   }, {});
-  const validateStatus = Joi.validate(objectValidate, validateCheck);
+  const validateStatus = Joi.validate(objectValidate, validateCheck, { abortEarly: false });
   if (validateStatus.error)
     res.status(200).json({ err: validateStatus.error.details[0].message });
   else next();
