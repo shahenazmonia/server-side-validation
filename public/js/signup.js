@@ -1,7 +1,3 @@
-
-const button = document.getElementById('submit');
-
-
 const signup = function(url = ``, data = {}) {
      return fetch(url, {
         method: "POST",
@@ -19,6 +15,7 @@ const signup = function(url = ``, data = {}) {
     })
 }
 
+const button = document.getElementById('signup');
 button.addEventListener('click', (event) => {
   event.preventDefault();
   const username= document.getElementById('username').value;
@@ -34,5 +31,5 @@ signup('/signup', {
   confirmPassword,
   role,
   mobile
-})
-})
+ });
+});

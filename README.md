@@ -28,12 +28,17 @@ const result = Joi.validate({ username: 'abc', password: 'sh1121993$$MO'}, schem
 ```
 
 ### Exercise
-_Note: All variables are required_
-
-- ```/signup``` function has variables:
+- Clone the repository.
+- Go to the terminal and run ```npm i```
+- run ```npm run dev```
+- Open ```localhost:3000``` in your browser
+- Login form will be displayed, try filling fields, then open dev tools -> console. A message will be displayed depends on your values  
+- Click on signup button and make validation for all variables. The variables are:
   * username -> should be string
   * email -> should be an email  
   * password -> should has at least 6 letters and contains [aA0-9]
   * confirmPassword -> The same password value  
   * role -> should be admin or user
   * mobile -> should be a number and at least has 7 numbers
+
+_Note: All variables are required_
