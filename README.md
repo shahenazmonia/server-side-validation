@@ -26,13 +26,14 @@ const schema = Joi.object().keys({
 const result = Joi.validate({ username: 'abc', password: 'sh1121993$$MO'}, schema);
 // result.error === null -> valid
 ```
+- The server and the front-end have been set up for you, you can have a look to understand the flow, then follow up the exercise instructions bellow
 
 ### Exercise
 - Clone the repository.
 - Go to the terminal and run ```npm i```
 - run ```npm run dev```
 - Open ```localhost:3000``` in your browser
-- Login form will be displayed, try filling fields, then open dev tools -> console. A message will be displayed depends on your values  
+- Login form will be displayed, try filling fields, then open dev tools -> console. a message will be displayed depend on the value you have for each form
 - Click on signup button and make validation for all variables. The variables are:
   * username -> should be string
   * email -> should be an email  
