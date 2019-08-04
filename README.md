@@ -28,6 +28,8 @@ const schema = Joi.object().keys({
 const result = Joi.validate({ username: 'abc', password: 'sh1121993$$MO'}, schema);
 // result.error === null -> valid
 ```
+
+
 - The server and the front-end have been set up for you, you can have a look to understand the flow, then follow up the exercise instructions bellow
 
 ### Exercise
