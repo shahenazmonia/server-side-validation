@@ -13,7 +13,9 @@ This method is secure because it will work even if JavaScript is turned off in t
 
 
 #### Joi Tool
-Joi allows you to create schemas for JavaScript objects (an object that stores information) to ensure validation of key information. Here is an example for login fields using ```joi``` validation.
+Joi allows you to create schemas for JavaScript objects (an object that stores information) to ensure validation of key information.
+
+Here is an example for login fields using ```joi``` validation.
 
 ```js
 const Joi = require('joi');
@@ -33,8 +35,8 @@ const result = Joi.validate({ username: 'abc', password: 'sh1121993$$MO'}, schem
 - Go to the terminal and run ```npm i```
 - run ```npm run dev```
 - Open ```localhost:3000``` in your browser
-- Login form will be displayed, try filling fields, then open dev tools -> console. a message will be displayed depend on the value you have for each form
-- Click on signup button and make validation for all variables. The variables are:
+- Login form will be displayed, try filling fields, then open dev tools -> console. a message will be displayed depend on the value you're filling out, test the login form until getting a message says `login validation is confirmed`
+- Click on signup button and make validation for all the variables. The variables are:
   * username -> should be string
   * email -> should be an email  
   * password -> should has at least 6 letters and contains [aA0-9]
